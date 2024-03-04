@@ -1,6 +1,5 @@
 const DetailsTable = ({ data, residents }) => {
   const getRows = (items) => {
-    console.log(items);
     const content = [];
     const headers = Object.keys(items);
     const tableData = Object.values(items);

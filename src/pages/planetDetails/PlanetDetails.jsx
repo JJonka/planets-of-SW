@@ -42,7 +42,6 @@ const PlanetDetails = () => {
       for (let i = 0; i < residentsSources.length; i++) {
         const response = await fetch(residentsSources[i]);
         const residentsData = await response.json();
-        console.log(residentsData);
         residents.push(residentsData["name"]);
       }
       setResidentsNames(residents);
