@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const NavButton = ({ link, linkTitle }) => {
+export const NavButton = ({ link, linkTitle }) => {
   return (
     <div>
       <Link to={link}>
@@ -9,5 +9,3 @@ const NavButton = ({ link, linkTitle }) => {
     </div>
   );
 };
-
-export default NavButton;

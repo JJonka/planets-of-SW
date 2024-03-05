@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import Card from "../../components/card/Card";
-import Table from "../../components/table/Table";
+import { Card } from "../../components/card/Card";
+import { Table } from "../../components/table/Table";
 
-const Home = () => {
+export const Home = () => {
   const [data, setData] = useState();
   const titles = ["name", "diameter", "climate", "terrain"];
 
@@ -37,5 +37,3 @@ const Home = () => {
     </Card>
   );
 };
-
-export default Home;

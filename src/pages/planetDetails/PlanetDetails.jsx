@@ -1,10 +1,10 @@
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
-import DetailsTable from "../../components/detailsTable/DetailsTable";
-import NavButton from "../../components/navButton/NavButton";
-import Card from "../../components/card/Card";
+import { DetailsTable } from "../../components/detailsTable/DetailsTable";
+import { NavButton } from "../../components/navButton/NavButton";
+import { Card } from "../../components/card/Card";
 
-const PlanetDetails = () => {
+export const PlanetDetails = () => {
   const [data, setData] = useState();
   const [residentsNames, setResidentsNames] = useState();
   const [planetsNames, setPlanetsNames] = useState();
@@ -69,5 +69,3 @@ const PlanetDetails = () => {
     </Card>
   );
 };
-
-export default PlanetDetails;
