@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 
-const Table = ({ columnTitles, data }) => {
+export const Table = ({ columnTitles, data }) => {
   return (
-    <table class={"highlight centered"}>
+    <table className={"highlight centered"}>
       <thead>
         <tr>
           {columnTitles.map((value) => (
@@ -30,5 +30,3 @@ const Table = ({ columnTitles, data }) => {
     </table>
   );
 };
-
-export default Table;

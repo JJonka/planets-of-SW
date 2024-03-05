@@ -1,4 +1,4 @@
-const DetailsTable = ({ data, residents }) => {
+export const DetailsTable = ({ data, residents }) => {
   const getRows = (items) => {
     const content = [];
     const headers = Object.keys(items);
@@ -38,5 +38,3 @@ const DetailsTable = ({ data, residents }) => {
     </table>
   );
 };
-
-export default DetailsTable;
